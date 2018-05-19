@@ -96,9 +96,6 @@
                 <includes>
                   <include>wildfly-swarm</include>
                 </includes>
-                <excludes>
-                  <exclude>webapp</exclude>
-                </excludes>
               </generator>
             </configuration>
           </plugin>
