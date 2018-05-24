@@ -7,7 +7,6 @@ import javax.ws.rs.Path;
 public class BoosterApplicationService {
 
 	@GET
-    @Path("/")
 	public String applicationIsReady() {
 		return "<h1>Hi, Your Application is Ready</h1>";
 	}
