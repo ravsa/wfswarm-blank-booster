@@ -17,6 +17,8 @@
 
   <properties>
     <version.wildfly.swarm>2018.5.0</version.wildfly.swarm>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencyManagement>
@@ -39,9 +41,39 @@
       <version>7.0</version>
       <scope>provided</scope>
     </dependency>
-    <!-- WildFly Swarm Fractions -->
-    
+
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <version>3.8.0</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>3.0.5</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.arquillian.cube</groupId>
+        <artifactId>arquillian-cube-openshift-starter</artifactId>
+        <version>1.15.3</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>io.fabric8</groupId>
+        <artifactId>openshift-client</artifactId>
+        <version>3.1.10</version>
+        <scope>test</scope>
+    </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <plugin>
